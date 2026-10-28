@@ -1,0 +1,12 @@
+# Статический анализ нового кода: vendor/bin/phpstan analyse
+# Уровень поднимаем по мере разбора legacy: новые каталоги сразу на 6.
+parameters:
+    level: 6
+    paths:
+        - commands
+        - components
+        - migrations
+        - models
+        - modules
+        - services
+    treatPhpDocTypesAsCertain: false
